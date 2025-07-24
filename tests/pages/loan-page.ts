@@ -1,9 +1,10 @@
 import {Locator, Page} from "@playwright/test";
+import {SERVICE_URL, TEST_PASSWORD, TEST_USERNAME} from "../../config/env-data";
 
 export class LoanPage {
-    readonly url = 'https://loan-app.tallinn-learning.ee/'
-    readonly username = 'daniild'
-    readonly password = 'pwd4V7wYbfT2n'
+    readonly url = SERVICE_URL
+    readonly username = TEST_USERNAME
+    readonly password = TEST_PASSWORD
     readonly page: Page;
     readonly applyButton: Locator;
     readonly amountInput: Locator;
