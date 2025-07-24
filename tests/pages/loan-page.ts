@@ -8,6 +8,7 @@ export class LoanPage {
     readonly page: Page;
     readonly applyButton: Locator;
     readonly amountInput: Locator;
+    readonly amountInputRange: Locator;
     readonly periodSelect: Locator;
     readonly usernameInput: Locator;
     readonly passwordInput: Locator;
@@ -19,6 +20,7 @@ export class LoanPage {
         this.page = page;
         this.applyButton = page.getByTestId('id-small-loan-calculator-field-apply')
         this.amountInput = page.getByTestId('id-small-loan-calculator-field-amount')
+        this.amountInputRange = page.getByTestId('id-small-loan-calculator-field-amount-slider')
         this.periodSelect = page.getByTestId('ib-small-loan-calculator-field-period')
         this.usernameInput = page.getByTestId('login-popup-username-input');
         this.passwordInput = page.getByTestId('login-popup-password-input');
